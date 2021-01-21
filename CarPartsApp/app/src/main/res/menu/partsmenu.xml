@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/Intercoolers"
+        android:icon="@drawable/intercooler"
+        android:title="Intercoolers"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Exhausts"
+        android:icon="@drawable/exhaust"
+        android:title="Exhausts"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Wheels"
+        android:icon="@drawable/wheelico"
+        android:title="Alloy Wheels"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/AllParts"
+        android:title="Show all Parts"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/ExitCarParts"
+        android:title="Exit"
+        app:showAsAction="never"
+        />
+
+</menu>

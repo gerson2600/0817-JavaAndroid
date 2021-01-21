@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CountriesApp</string>
+    <string name="CountriesNameVar">"Name: "</string>
+    <string name="CountriesCapitalVar">"Capital: "</string>
+    <string name="CountriesPopulationVar">"Estimated Population: "</string>
+    <string name="CountriesAreaVar">"Landmass Area: "</string>
+    <string name="CountriesCurrencyVar">"National Currency: "</string>
+    <string name="CountriesSplashTitleTop">5 Super Power Countries</string>
+    <string name="CountriesSplashTitleBottom">Basic Information</string>
+</resources>

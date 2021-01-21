@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="insira_a_sua_altura">Insert your height</string>
+    <string name="insira_o_seu_peso">Insert your weight</string>
+    <string name="calcular_imc">Calculate BMI</string>
+</resources>

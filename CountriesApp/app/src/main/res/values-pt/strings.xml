@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CountriesApp</string>
+    <string name="CountriesNameVar">"Nome: "</string>
+    <string name="CountriesCapitalVar">"Capital: "</string>
+    <string name="CountriesPopulationVar">"População Estimada: "</string>
+    <string name="CountriesAreaVar">"Área: "</string>
+    <string name="CountriesCurrencyVar">"Moeda Nacional: "</string>
+    <string name="CountriesSplashTitleTop">5 Nações Super Poderosas</string>
+    <string name="CountriesSplashTitleBottom">Informação Básica</string>
+</resources>

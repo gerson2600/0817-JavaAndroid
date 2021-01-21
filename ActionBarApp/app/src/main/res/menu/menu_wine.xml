@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/redwine"
+        android:icon="@drawable/vinhotintoicon"
+        android:title="Red Wine"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/whitewine"
+        android:icon="@drawable/vinhobrancoicon"
+        android:title="White Wine"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/exitwines"
+        android:title="Exit"
+        app:showAsAction="never"
+        />
+
+
+</menu>

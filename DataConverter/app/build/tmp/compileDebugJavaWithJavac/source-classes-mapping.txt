@@ -1,0 +1,17 @@
+com/example/dataconverter/WeightsActivity.java
+ com.example.dataconverter.WeightsActivity
+com/example/dataconverter/MainActivity.java
+ com.example.dataconverter.MainActivity
+ com.example.dataconverter.MainActivity$1
+com/example/dataconverter/DistancesActivity.java
+ com.example.dataconverter.DistancesActivity
+com/example/dataconverter/MenuActivity.java
+ com.example.dataconverter.MenuActivity
+ com.example.dataconverter.MenuActivity$1
+ com.example.dataconverter.MenuActivity$2
+ com.example.dataconverter.MenuActivity$3
+ com.example.dataconverter.MenuActivity$4
+com/example/dataconverter/CurrenciesActivity.java
+ com.example.dataconverter.CurrenciesActivity
+com/example/dataconverter/BuildConfig.java
+ com.example.dataconverter.BuildConfig

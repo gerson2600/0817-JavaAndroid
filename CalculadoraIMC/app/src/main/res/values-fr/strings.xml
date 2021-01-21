@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculateur IMC</string>
+    <string name="insira_a_sua_altura">Insérez votre taille</string>
+    <string name="insira_o_seu_peso">Insérez votre poids</string>
+    <string name="calcular_imc">Calculer l\'IMC</string>
+</resources>
