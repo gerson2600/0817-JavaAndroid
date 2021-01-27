@@ -16,16 +16,15 @@ public class MenuActivity extends AppCompatActivity {
 
     public void OpenShowShoppingList(View V)
     {
-        Intent i = new Intent(MenuActivity.this, AddShoppingItemActivity.class);
+        Intent i = new Intent(MenuActivity.this, ShowShoppingListActivity.class);
         startActivity(i);
     }
 
     public void OpenAddShoppingItemsList(View V)
     {
-        Intent i = new Intent(MenuActivity.this, ShowShoppingListActivity.class);
+        Intent i = new Intent(MenuActivity.this, AddShoppingItemActivity.class);
         startActivity(i);
     }
-
 
 
 

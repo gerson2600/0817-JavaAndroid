@@ -20,7 +20,7 @@ public class DB_Controller extends SQLiteOpenHelper {
         sqlDbShopping.execSQL("CREATE TABLE ShopList(id INTEGER PRIMARY KEY AUTOINCREMENT," +
                                                     "ProdName TEXT NOT NULL," +
                                                     "Brand TEXT NOT NULL," +
-                                                    "Quantity INTEGER NOT NULL)");
+                                                    "Quantity TEXT NOT NULL)");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class DB_Controller extends SQLiteOpenHelper {
         onCreate(sqlDbShopping);
     }
 
-    public void DbInsertItemToList(String ItemProdName, String ItemBrand, int ListQuantity)
+    public void DbInsertItemToList(String ItemProdName, String ItemBrand, String ListQuantity)
     {
         ContentValues InsertValues = new ContentValues();
         InsertValues.put("ProdName", ItemProdName);
@@ -45,7 +45,7 @@ public class DB_Controller extends SQLiteOpenHelper {
     }
 
 
-    public void DbUpdateList(String ItemProdName, String ItemBrand, int ListQuantity)
+    public void DbUpdateList(String ItemProdName, String ItemBrand, String ListQuantity)
     {
 
     }
@@ -59,7 +59,7 @@ public class DB_Controller extends SQLiteOpenHelper {
             tv.append("ID: "+DbCursor.getInt(0)+
                     "\nItem Name: "+ DbCursor.getString(1)+
                     "\nProduct Brand: "+ DbCursor.getString(2)+
-                    "\nQuantity: "+DbCursor.getInt(3)+"\n");
+                    "\nQuantity: "+ DbCursor.getString(3)+"\n");
         }
     }
 
