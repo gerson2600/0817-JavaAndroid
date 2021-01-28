@@ -26,6 +26,11 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void ExitApplication(View V)
+    {
+        MenuActivity.this.finish();
+    }
+
 
 
 }

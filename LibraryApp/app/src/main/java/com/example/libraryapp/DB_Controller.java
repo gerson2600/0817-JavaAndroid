@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 //pain is eternal
 public class DB_Controller extends SQLiteOpenHelper {
 
@@ -70,6 +72,22 @@ public class DB_Controller extends SQLiteOpenHelper {
                     "\nEditor: "+DbCursor.getString(3)+
                     "\nYear of Publication: "+DbCursor.getInt(4)+ "\n");
         }
+    }
+
+    public void ObtainData(TextView TxtName, TextView TxtAuthor, TextView TxtEditor, TextView TxtYearPub, int BookId)
+    {
+        String [] BookIdString = new String[]{BookId+""};
+        Cursor DbCursor = this.getReadableDatabase().rawQuery("SELECT * FROM Books WHERE id = ?", BookIdString);
+
+        TxtName.setText("");
+        TxtAuthor.setText("");
+        TxtEditor.setText("");
+        TxtYearPub.setText("");
+        DbCursor.moveToFirst();
+        TxtName.append(DbCursor.getString(1));
+        TxtAuthor.append(DbCursor.getString(2));
+        TxtEditor.append(DbCursor.getString(3));
+        TxtYearPub.append(DbCursor.getInt(4)+"");
     }
 
 

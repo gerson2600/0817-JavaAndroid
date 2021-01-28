@@ -39,14 +39,17 @@ public class DB_Controller extends SQLiteOpenHelper {
         this.getWritableDatabase().insertOrThrow("ShopList", "", InsertValues);
     }
 
-    public void DbDeleteItemFromList(int idItem)
+    public void DbDeleteItemByID(int idItem)
     {
         this.getWritableDatabase().delete("ShopList", "id="+idItem, null);
     }
 
 
-    public void DbUpdateList(String ItemProdName, String ItemBrand, String ListQuantity)
+    public void DbUpdateList(String ItemProdName, String ItemBrand, String ListQuantity, int IdItem)
     {
+        this.getWritableDatabase().execSQL("UPDATE ShopList SET ProdName='"+ItemProdName+"'," +
+                "Brand='"+ItemBrand+"'," +
+                "Quantity='"+ListQuantity+"'WHERE id="+IdItem);
 
     }
 
@@ -61,6 +64,21 @@ public class DB_Controller extends SQLiteOpenHelper {
                     "\nProduct Brand: "+ DbCursor.getString(2)+
                     "\nQuantity: "+ DbCursor.getString(3)+"\n");
         }
+    }
+
+    public void ObtainData(TextView TxtProdName, TextView TxtProdBrand, TextView TxtProdQuant, int ProdID)
+    {
+        String [] ProdIdString = new String[]{ProdID+""};
+        Cursor DbCursor = this.getReadableDatabase().rawQuery("SELECT * FROM ShopList WHERE id = ?", ProdIdString);
+
+        TxtProdName.setText("");
+        TxtProdBrand.setText("");
+        TxtProdQuant.setText("");
+
+        DbCursor.moveToFirst();
+        TxtProdName.append(DbCursor.getString(1));
+        TxtProdBrand.append(DbCursor.getString(2));
+        TxtProdQuant.append(DbCursor.getString(3));
     }
 
 
