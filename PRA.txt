@@ -1,0 +1,41 @@
+UFCD 0817 - Android Dev (Java Web)
+* Transmitir os princípios básicos e boas práticas de desenvolvimento de software
+para dispositivos móveis portáteis. Familiarizar o aluno com o sistema operacional
+e framework Android e adquirir experiência prática com a programação para essa
+plataforma.
+Específicos
+* Compreender os principais conceitos e componentes de aplicações para
+dispositivos móveis;
+* Identificar o processo de construção de uma aplicação móvel;
+* Desenvolver aplicações móveis utilizando uma linguagem de programação.
+
+
+1. Introdução ao Android
+* Conceitos Iniciais
+* Visão geral da plataforma
+* Versionamentos
+* Ambiente de Desenvolvimento
+2. A plataforma
+* Manifest
+* Activity
+* Intent
+* Service
+3. Layout
+* Interface gráfica – gerenciadores de layout
+* Interface gráfica - view
+4. Recursos
+* BroadcastReceiver
+* Notification
+* HTTPConnect
+* AlarmManager
+* Handler
+* Câmera
+* GPS
+* Mapas
+* SMS
+* Áudio
+5. Banco de Dados com Android
+* SQL Lite
+* Content Provider
+* Entrada/Saída
+6. Integração da APIs - JSON
